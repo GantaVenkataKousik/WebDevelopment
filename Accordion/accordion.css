@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Vina+Sans&display=swap');
+       
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Barriecito', cursive;
+    font-family: 'Vina Sans', cursive;
+    letter-spacing: 2px;
+}
+
+body {
+    background: linear-gradient(to right, white, rgb(0, 242, 255));
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.question,
+.answer {
+    background: #000;
+}
+
+.content-box {
+    width: 40%;
+}
+
+.question {
+    padding: 15px;
+    position: relative;
+    margin: 5px 0 0 0;
+    transition: 0.5s;
+}
+
+.question::before {
+    content: '+';
+    position: absolute;
+    right: 5%;
+    transition: 0.5s;
+}
+
+.active .question::before {
+    content: '-';
+}
+
+.content-box.active .answer {
+    height: auto;
+    padding: 15px;
+}
+
+.answer {
+    padding: 0px;
+    transition: 0.5s;
+    background: #fff;
+    color: #000;
+    height: 0;
+    overflow: hidden;
+}
+footer{
+    position: absolute;
+    bottom: 10px;   
+}
+footer span{
+    background: black;
+    padding: 3px;
+    border-radius: 10px;
+    
+}
