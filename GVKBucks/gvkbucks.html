@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarBucks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,300&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Golos+Text:wght@600&family=Lobster&family=Noto+Sans&family=Source+Sans+Pro:ital,wght@1,600&family=Tilt+Warp&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="gvkbucks">
+</head>
+<body>
+    <section>
+        <div class="circle">
+        </div>
+        <header>
+            <div class="logo">
+                <a href="#"><img src="logo.png" alt="Starbucks Logo"></a>
+            </div>
+            <nav class="links">
+                <ul>
+                    <li ><a href="#" class="active" onmouseover="changeStatus(event)">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" onmouseover="changeStatus(event)">Menu</a>
+                    </li>
+                    <li><a href="#" onmouseover="changeStatus(event)">Whats's New</a></li>
+                    <li><a href="#" onmouseover="changeStatus(event)">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content">
+            <div class="textBox">
+                <h2 id="title">It's not just a Coffee <br>It's <span>GVK Bucks</span><span id="cursor">|</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, numquam sed alias harum corporis expedita ex. Saepe voluptates ipsam dignissimos laudantium! Neque, amet eos tenetur illum voluptas ad culpa, veritatis molestiae perspiciatis explicabo voluptatem! Vitae blanditiis qui quos quidem assumenda.</p>
+                <a href="#" class="button">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <a href="#"><img src="img1.png" alt="A coffee" class="starbucks"></a>
+            </div>
+        </div>
+        <div class="textBox">
+          
+        </div>
+        
+    
+        <ul class="thumb">
+            <li><img src="thumb1.png" onclick="imageSlider('img1.png');changeCircleColor('#017143')" ></li>
+            <li><img src="thumb2.png" onclick="imageSlider('img2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="thumb3.png" onclick="imageSlider('img3.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+
+        <ul class="sci"> 
+            <div class="sci_div">
+                
+            <li><a href="#" class="icon1"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#" class="icon2"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#" class="icon3"><i class="fa-brands fa-instagram"></i></a></li>
+            
+            </div>
+        </ul>
+
+        <p class="credits">&copy;copyright | <span><a href="https://www.linkedin.com/feed/" target="_blank">Ganta Venkata Kousik</a> </span> | 2023</p>
+    </section>
+    <script src="gvkbucks.js"></script>
+</body>
+</html>
