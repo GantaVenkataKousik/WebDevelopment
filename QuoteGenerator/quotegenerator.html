@@ -9,66 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Golos+Text:wght@400;600&family=Lobster&family=Poppins:wght@100;400&family=Rubik&display=swap" rel="stylesheet">
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background: #59c4a7;
-            font-family: 'Dancing Script', cursive;
-            font-family: 'Golos Text', sans-serif;
-            font-family: 'Lobster', cursive;
-            font-family: 'Poppins', sans-serif;
-            font-family: 'Rubik', sans-serif;
-        }
-        
-        .quote-generator {
-            background: #fff;
-            border-radius: 20px;
-            padding: 35px;
-            width: 500px;
-            height: auto;
-        }
-        
-        .quote-generator h2,
-        .quote-generator p {
-            text-align: center;
-            font-size: 1.3em;
-        }
-        
-        .quote-generator h2 {
-            font-size: 2em;
-        }
-        
-        .btns {
-            display: flex;
-        }
-        
-        button {
-            border: none;
-            background: #33bfaa;
-            color: #fff;
-            cursor: pointer;
-            padding: 10px 20px;
-            font-size: 1.3em;
-            border-radius: 10px;
-            margin: 20px 40px 0;
-            width: 150px;
-            color: #fff;
-        }
-        footer{
-            color: black;
-            position: absolute;
-            bottom: 0px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
 
-        footer span{
-            font-size: 1.3rem;
-        }
-    </style>
 </head>
 
 <body>
@@ -84,30 +25,7 @@
     <footer>
         <p>&#169;copyright | <span> GantaVenkataKousik </span> | 2023</p>
     </footer>
-    <script>
-        const quote_display = document.querySelector(".quote-display");
-        const author = document.querySelector(".author");
-        const next = document.querySelector(".next");
-        const tweet = document.querySelector(".tweet");
 
-        const api = "https://api.quotable.io/random";
-        async function fetchdata(url) {
-            const response = await fetch(url);
-            var data = await response.json();
-            quote_display.innerHTML = data.content;
-            author.innerHTML = data.author;
-        }
-        fetchdata(api);
-        next.addEventListener("click", () => {
-            fetchdata(api);
-        })
-
-        if (quote_display !== "quote here....") {
-            tweet.addEventListener("click", () => {
-                window.open("https://twitter.com/intent/tweet?text=" + quote_display.innerHTML + "  --> " + author.innerHTML, "Tweet window", "width = 500, height = 400 ");
-            });
-        }
-    </script>
 </body>
 
 </html>
