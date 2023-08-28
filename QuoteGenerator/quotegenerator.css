@@ -1,0 +1,58 @@
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #59c4a7;
+            font-family: 'Dancing Script', cursive;
+            font-family: 'Golos Text', sans-serif;
+            font-family: 'Lobster', cursive;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Rubik', sans-serif;
+        }
+        
+        .quote-generator {
+            background: #fff;
+            border-radius: 20px;
+            padding: 35px;
+            width: 500px;
+            height: auto;
+        }
+        
+        .quote-generator h2,
+        .quote-generator p {
+            text-align: center;
+            font-size: 1.3em;
+        }
+        
+        .quote-generator h2 {
+            font-size: 2em;
+        }
+        
+        .btns {
+            display: flex;
+        }
+        
+        button {
+            border: none;
+            background: #33bfaa;
+            color: #fff;
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 1.3em;
+            border-radius: 10px;
+            margin: 20px 40px 0;
+            width: 150px;
+            color: #fff;
+        }
+        footer{
+            color: black;
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        footer span{
+            font-size: 1.3rem;
+        }
