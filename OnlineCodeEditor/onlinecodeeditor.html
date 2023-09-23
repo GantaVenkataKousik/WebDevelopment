@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CDN Font Awesome -->
+    <script src="https://kit.fontawesome.com/76ef34fa2d.js" crossorigin="anonymous"></script>
+    <!--custom style sheet-->
+    <link rel="stylesheet" href="./style.css">
+    
+    <title>Live Code Editor</title>
+</head>
+<body>
+    <div class="container">
+         <div class="left">
+            <label><i class="fa-brands fa-html5" style="color: #e46f01;"></i> HTML</label>
+            <textarea id="html-code" onkeyup="run()"></textarea>
+
+            <label><i class="fa-brands fa-css3-alt" style="color: #3881ff;"></i> CSS</label>
+            <textarea id="css-code" onkeyup="run()"></textarea>
+
+            <label><i class="fa-brands fa-square-js" style="color: #e3e633;"></i> JavaScript</label>
+            <textarea id="js-code" onkeyup="run()"></textarea>
+         </div>
+
+         <div class="right">
+            <label><i class="fa-solid fa-play"></i> Output</label>
+            <iframe id="output"></iframe>
+         </div>
+    </div>
+    <footer>
+        <p>&#169;copyright | <span>GantaVenkataKousik </span>  |  2023</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
